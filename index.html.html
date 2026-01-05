@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAQUINARIAS SEBASTIAN | Venta de Maquinaria en Perú</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1f2933;
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+    }
+    nav {
+      background-color: #374151;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .precio {
+      color: #15803d;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    footer {
+      background-color: #1f2933;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MAQUINARIAS SEBASTIAN</h1>
+    <p>Venta de maquinaria industrial y comercial en todo el Perú</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Máquinas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p>En <strong>MAQUINARIAS SEBASTIAN</strong> nos dedicamos a la venta de maquinaria de alta calidad para la industria, comercio y emprendimientos en todo el Perú. Ofrecemos garantía, asesoría y envíos a nivel nacional.</p>
+  </section>
+
+  <section id="productos">
+    <h2>Nuestras Máquinas</h2>
+    <div class="productos">
+      <div class="card">
+        <h3>Máquina Industrial</h3>
+        <p>Alta resistencia, ideal para trabajo continuo en planta.</p>
+        <p class="precio">S/ 9,500</p>
+        <button>Consultar</button>
+      </div>
+      <div class="card">
+        <h3>Máquina Comercial</h3>
+        <p>Perfecta para negocios pequeños y medianos.</p>
+        <p class="precio">S/ 6,800</p>
+        <button>Consultar</button>
+      </div>
+      <div class="card">
+        <h3>Máquina Automática</h3>
+        <p>Automatización, eficiencia y ahorro de tiempo.</p>
+        <p class="precio">S/ 12,300</p>
+        <button>Consultar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>📍 Perú</strong></p>
+    <p>📞 Teléfono / WhatsApp: +51 981 256 282</p>
+    <p>✉️ Email: maquinariasmscaltex@gmail.com</p>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/51981256282?text=Hola%20estoy%20interesado%20en%20una%20máquina%20de%20MAQUINARIAS%20SEBASTIAN" target="_blank">WhatsApp</a>
+
+  <footer>
+    <p>© 2026 MAQUINARIAS SEBASTIAN - Perú</p>
+  </footer>
+
+</body>
+</html>
