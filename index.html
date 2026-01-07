@@ -3,12 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>MAQUINARIAS SEBASTIAN</title>
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body{
   margin:0;
-  font-family:'Segoe UI',Arial,sans-serif;
+  font-family:Arial, sans-serif;
   background:radial-gradient(circle at top,#0f172a,#020617);
   color:#e5e7eb;
 }
@@ -23,15 +27,8 @@ header img{
   height:auto;
   filter:drop-shadow(0 6px 14px rgba(0,0,0,0.35));
 }
-header img{
-  max-width:100%;
-  height:auto;
-  filter:drop-shadow(0 10px 25px rgba(0,0,0,0.8));
-}
 section{
-  padding:90px 20px;
-  position:relative;
-  overflow:hidden;
+  padding:80px 20px;
 }
 .azul{
   background:linear-gradient(135deg,#020617,#030712);
@@ -42,17 +39,7 @@ section{
 h2{
   text-align:center;
   margin-bottom:40px;
-  font-size:34px;
-  letter-spacing:1px;
-}
-h2::after{
-  content:"";
-  display:block;
-  width:80px;
-  height:4px;
-  background:#22c55e;
-  margin:18px auto 0;
-  border-radius:10px;
+  font-size:32px;
 }
 .grid{
   max-width:1150px;
@@ -71,18 +58,17 @@ h2::after{
   text-align:center;
   border:1px solid rgba(255,255,255,0.12);
   box-shadow:0 20px 40px rgba(0,0,0,0.6);
-  transition:all 0.45s ease;
+  transition:all 0.35s ease;
 }
 .card:hover{
-  transform:translateY(-14px) scale(1.04);
-  box-shadow:0 30px 60px rgba(0,0,0,0.9);
+  transform:translateY(-10px) scale(1.03);
 }
 .card a{
   display:inline-block;
   margin-top:18px;
   padding:12px 22px;
   border-radius:30px;
-  background:linear-gradient(135deg,#22c55e,#16a34a);
+  background:#22c55e;
   color:#022c22;
   text-decoration:none;
   font-weight:bold;
@@ -91,13 +77,12 @@ h2::after{
   position:fixed;
   bottom:20px;
   right:20px;
-  background:linear-gradient(135deg,#22c55e,#16a34a);
+  background:#22c55e;
   color:#022c22;
   padding:16px 24px;
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
-  box-shadow:0 15px 35px rgba(34,197,94,0.6);
   animation:pulse 1.8s infinite;
 }
 .tiktok{
@@ -110,7 +95,6 @@ h2::after{
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
-  box-shadow:0 15px 35px rgba(0,0,0,0.7);
   animation:pulse 1.8s infinite;
 }
 footer{
@@ -137,7 +121,7 @@ footer{
 <section class="azul">
   <div class="grid">
     <h2>Bienvenidos</h2>
-    <p style="text-align:center; font-size:18px; max-width:800px; margin:auto;">
+    <p style="text-align:center; font-size:18px;">
       Ventas, montajes y mantenimiento de maquinaria industrial.<br>
       Diseño y fabricación de equipos de control de procesos, repuestos y accesorios.<br>
       Proyectos electroneumáticos e hidráulicos.
@@ -148,25 +132,21 @@ footer{
 <section class="blanco">
   <div class="grid">
     <h2>Nuestras Máquinas</h2>
-    <p style="text-align:center; font-size:17px; max-width:720px; margin:0 auto 40px;">
-      Soluciones industriales desarrolladas según la necesidad de cada cliente.
-      Solicite información y reciba asesoría profesional directa.
-    </p>
     <div class="cards">
       <div class="card">
         <h3>Máquina Industrial A</h3>
-        <p>Solución robusta para procesos industriales.</p>
-        <a class="btn-consultar" href="https://wa.me/51981256282?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20sus%20maquinarias." target="_blank">Consultar por WhatsApp</a>
+        <p>Precio: Consultar</p>
+        <a href="https://wa.me/51981256282?text=Hola,%20deseo%20información%20sobre%20sus%20maquinarias." target="_blank">Consultar</a>
       </div>
       <div class="card">
         <h3>Máquina Industrial B</h3>
-        <p>Diseñada para alto rendimiento y durabilidad.</p>
-        <a class="btn-consultar" href="https://wa.me/51981256282?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20sus%20maquinarias." target="_blank">Consultar por WhatsApp</a>
+        <p>Precio: Consultar</p>
+        <a href="https://wa.me/51981256282?text=Hola,%20deseo%20información%20sobre%20sus%20maquinarias." target="_blank">Consultar</a>
       </div>
       <div class="card">
         <h3>Máquina Industrial C</h3>
-        <p>Fabricación y adaptación según requerimiento.</p>
-        <a class="btn-consultar" href="https://wa.me/51981256282?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20sus%20maquinarias." target="_blank">Consultar por WhatsApp</a>
+        <p>Precio: Consultar</p>
+        <a href="https://wa.me/51981256282?text=Hola,%20deseo%20información%20sobre%20sus%20maquinarias." target="_blank">Consultar</a>
       </div>
     </div>
   </div>
@@ -174,35 +154,13 @@ footer{
 
 <section class="azul">
   <div class="grid">
-    <h2>Confianza y Profesionalismo</h2>
-    <div class="cards">
-      <div class="card">
-        <strong>Jesús Valencia Solís</strong><br>
-        Ing. Mecánico<br>
-        CIP 89039
-      </div>
-      <div class="card">
-        📱 Cel: +51 981 256 282<br>
-        📧 jesus1712valencia@gmail.com
-      </div>
-      <div class="card">
-        Atención personalizada<br>
-        Soporte técnico profesional<br>
-        Compromiso y responsabilidad
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="blanco">
-  <div class="grid">
     <h2>Contacto</h2>
-    <p>📧 maquinariasmscaltex@gmail.com</p>
-    <p>📱 +51 981 256 282</p>
+    <p style="text-align:center;">📧 maquinariasmscaltex@gmail.com</p>
+    <p style="text-align:center;">📱 +51 981 256 282</p>
   </div>
 </section>
 
-<a class="whatsapp" href="https://wa.me/51981256282?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20sus%20maquinarias." target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/51981256282?text=Hola,%20deseo%20información%20sobre%20sus%20maquinarias." target="_blank">WhatsApp</a>
 <a class="tiktok" href="https://www.tiktok.com/@maquisebastian" target="_blank">TikTok</a>
 
 <footer>
