@@ -18,7 +18,7 @@ header{
   padding:40px 20px;
 }
 header img{
-  max-width:100%;
+  max-width:220px;
   height:auto;
 }
 section{
@@ -40,21 +40,35 @@ h2{
 }
 .cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
 }
 .card{
   background:white;
-  border:1px solid #ddd;
-  padding:20px;
+  border-radius:14px;
+  padding:25px;
   text-align:center;
+  box-shadow:0 8px 22px rgba(0,0,0,0.08);
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card a{
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 14px 30px rgba(0,0,0,0.14);
+}
+.btn-consultar{
   display:inline-block;
-  margin-top:10px;
+  margin-top:18px;
+  padding:12px 22px;
+  background:#25D366;
+  color:white;
   text-decoration:none;
+  border-radius:40px;
   font-weight:bold;
-  color:#25D366;
+  transition:background 0.3s ease, transform 0.2s ease;
+}
+.btn-consultar:hover{
+  background:#1ebe5d;
+  transform:scale(1.06);
 }
 .whatsapp{
   position:fixed;
@@ -62,15 +76,15 @@ h2{
   right:20px;
   background:#25D366;
   color:white;
-  padding:15px 20px;
+  padding:15px 22px;
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
-  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+  box-shadow:0 6px 15px rgba(0,0,0,0.35);
 }
 .tiktok{
   position:fixed;
-  bottom:80px;
+  bottom:85px;
   right:20px;
   background:black;
   color:white;
@@ -96,7 +110,7 @@ footer{
 <section class="azul">
   <div class="grid">
     <h2>Bienvenidos</h2>
-    <p style="text-align:center; font-size:18px;">
+    <p style="text-align:center; font-size:18px; max-width:800px; margin:auto;">
       Ventas, montajes y mantenimiento de maquinaria industrial.<br>
       Diseño y fabricación de equipos de control de procesos, repuestos y accesorios.<br>
       Proyectos electroneumáticos e hidráulicos.
@@ -106,34 +120,48 @@ footer{
 
 <section class="blanco">
   <div class="grid">
-    <h2>¿Por qué elegirnos?</h2>
+    <h2>Nuestras Máquinas</h2>
+    <p style="text-align:center; font-size:17px; max-width:720px; margin:0 auto 40px;">
+      Soluciones industriales desarrolladas según la necesidad de cada cliente.
+      Solicite información y reciba asesoría profesional directa.
+    </p>
     <div class="cards">
-      <div class="card">Experiencia en el sector industrial</div>
-      <div class="card">Soluciones a medida</div>
-      <div class="card">Soporte técnico garantizado</div>
-      <div class="card">Atención en todo el Perú</div>
+      <div class="card">
+        <h3>Máquina Industrial A</h3>
+        <p>Solución robusta para procesos industriales.</p>
+        <a class="btn-consultar" href="https://wa.me/51981256282?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20sus%20maquinarias." target="_blank">Consultar por WhatsApp</a>
+      </div>
+      <div class="card">
+        <h3>Máquina Industrial B</h3>
+        <p>Diseñada para alto rendimiento y durabilidad.</p>
+        <a class="btn-consultar" href="https://wa.me/51981256282?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20sus%20maquinarias." target="_blank">Consultar por WhatsApp</a>
+      </div>
+      <div class="card">
+        <h3>Máquina Industrial C</h3>
+        <p>Fabricación y adaptación según requerimiento.</p>
+        <a class="btn-consultar" href="https://wa.me/51981256282?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20sus%20maquinarias." target="_blank">Consultar por WhatsApp</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="azul">
   <div class="grid">
-    <h2>Nuestras Máquinas</h2>
+    <h2>Confianza y Profesionalismo</h2>
     <div class="cards">
       <div class="card">
-        <h3>Máquina Industrial A</h3>
-        <p>Precio: Consultar</p>
-        <a href="https://wa.me/51981256282?text=%C2%BFEn%20qu%C3%A9%20podr%C3%ADa%20ayudarle%3F%20%C2%BFCu%C3%A1l%20es%20su%20consulta%20sobre%20nuestras%20maquinarias%3F" target="_blank">Consultar</a>
+        <strong>Jesús Valencia Solís</strong><br>
+        Ing. Mecánico<br>
+        CIP 89039
       </div>
       <div class="card">
-        <h3>Máquina Industrial B</h3>
-        <p>Precio: Consultar</p>
-        <a href="https://wa.me/51981256282?text=%C2%BFEn%20qu%C3%A9%20podr%C3%ADa%20ayudarle%3F%20%C2%BFCu%C3%A1l%20es%20su%20consulta%20sobre%20nuestras%20maquinarias%3F" target="_blank">Consultar</a>
+        📱 Cel: +51 981 256 282<br>
+        📧 jesus1712valencia@gmail.com
       </div>
       <div class="card">
-        <h3>Máquina Industrial C</h3>
-        <p>Precio: Consultar</p>
-        <a href="https://wa.me/51981256282?text=%C2%BFEn%20qu%C3%A9%20podr%C3%ADa%20ayudarle%3F%20%C2%BFCu%C3%A1l%20es%20su%20consulta%20sobre%20nuestras%20maquinarias%3F" target="_blank">Consultar</a>
+        Atención personalizada<br>
+        Soporte técnico profesional<br>
+        Compromiso y responsabilidad
       </div>
     </div>
   </div>
@@ -147,7 +175,7 @@ footer{
   </div>
 </section>
 
-<a class="whatsapp" href="https://wa.me/51981256282?text=%C2%BFEn%20qu%C3%A9%20podr%C3%ADa%20ayudarle%3F%20%C2%BFCu%C3%A1l%20es%20su%20consulta%20sobre%20nuestras%20maquinarias%3F" target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/51981256282?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20sus%20maquinarias." target="_blank">WhatsApp</a>
 <a class="tiktok" href="https://www.tiktok.com/@maquisebastian" target="_blank">TikTok</a>
 
 <footer>
